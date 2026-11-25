@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Stream Clipper AI uses YouTube data, stores records and handles requests for deletion or revocation.">
+<title>Privacy policy | Stream Clipper AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">Stream Clipper AI</a>
+<nav aria-label="Main"><a href="index.html">Home</a> <a href="privacy.html" aria-current="page">Privacy</a> <a href="terms.html">Terms</a></nav>
+</header>
+<main>
+<h1>Privacy policy</h1>
+<p class="intro">Stream Clipper AI uses YouTube API Services to publish to VYBYZINK and read the channel’s performance. I operate the app on my Windows computer.</p>
+<section><h2>Data the app uses</h2>
+<ul>
+<li><strong>Channel and uploads.</strong> The app reads my authorized channel ID, uploads a video and its title, description, tags, language and visibility settings, then checks the returned video ID, processing status, visibility and any reported region restrictions. A separate editing permission can be used to correct video metadata when I choose to do so.</li>
+<li><strong>Performance.</strong> The app reads video statistics including views, likes and comment counts. It uses a separate read-only authorization for YouTube Analytics to read engaged views, average viewing duration, average percentage viewed, subscriptions gained and audience retention at different points in a video. These reports describe the audience in aggregate.</li>
+<li><strong>Google authorization.</strong> Google handles sign-in and consent. The app receives access and refresh tokens so it can carry out the tasks I authorized and reconnect without requiring a fresh sign-in for each upload.</li>
+</ul></section>
+<section><h2>Storage and retention</h2>
+<p>The local app saves its publishing and Analytics authorizations in separate credential files. SQLite databases and local files hold the upload queue, transfer checkpoints, channel and video IDs, media hashes, publication receipts, logs and performance snapshots. The Analytics command displays the report to the operator. I can save a copy locally.</p>
+<p>A local upload copy can be removed after YouTube confirms a successful public publication and no remaining job requires the file. Source masters can be retained for later editing. Publication receipts and performance records can outlast the local MP4 to support recovery, prevent duplicate uploads and compare videos. There is no single automatic deletion date for those records.</p></section>
+<section><h2>Where information goes</h2>
+<p>The app sends Google the authorization requests, video files, metadata and API queries needed to run the channel. Public videos and their public metadata are visible on YouTube. The publishing workflow does not send OAuth credentials or private Analytics reports to Twitch, advertisers or the public website.</p>
+<p>These static pages use no sign-in form, cookies set by the site, analytics scripts or embedded players. The hosting provider receives ordinary web requests, including the visitor’s IP address. Google explains its own handling of information in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p></section>
+<section><h2>Revoke access or request deletion</h2>
+<p>Open <a href="https://myaccount.google.com/connections">your Google Account’s third-party connections</a>, choose Stream Clipper AI and remove its access. Revocation stops future authorized access. Local records and videos already uploaded to YouTube are managed separately.</p>
+<p>For deletion of locally stored credentials, reports or records, email <a href="mailto:kkittoorryy@gmail.com">kkittoorryy@gmail.com</a> and identify the channel or video concerned. Please leave out passwords, sign-in codes and tokens. The channel owner can remove an uploaded video in <a href="https://studio.youtube.com/">YouTube Studio</a> or contact the operator about a specific upload.</p></section>
+</main>
+<footer>VYBYZINK · Stream Clipper AI</footer>
+</body>
+</html>
